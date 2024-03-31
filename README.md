@@ -1,4 +1,4 @@
-*SC1015 Project*
+**SC1015 Project**
 ---
 
 **Overview**
