@@ -37,6 +37,7 @@ Third, we split the female data from the male data and tried to model them seper
 **Support Vector Machine (SVM) model**
 
 **Grid Search**
+
 After finding our best performing model (Random Forest). We used GridSearch to perform hyperparameterisation of our model to try and create an even more accurate model.
 
 ## Results
