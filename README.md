@@ -43,4 +43,14 @@ After finding our best performing model (Random Forest). We used GridSearch to p
 ## Results
 ----
 
+Model | Accuracy | TPR | TNR
+--- | --- | --- | --- 
+Binary Classification Tree | 0.842 | 0.821 | 0.871
+Untouched Random Forest | 0.842 | 0.877 | 0.782
+Random Forest with Upsampling | 0.841 | 0.748 | 0.874
+Random Forest with Male and Female Split (Averaged) | 0.824 | 0.691 | 0.811
+Support Vector Model (SVM) | 0.842 | 0.811 | 0.821
+Untouched Random Forest after grid search | 0.842 | 0.887 | 0.770
+
+
 
