@@ -36,12 +36,14 @@ Third, we split the female data from the male data and tried to model them seper
 
 **Support Vector Machine (SVM) model**
 
+We used a SVM as a regression model to help predict heart disease with the same predictors as our baseline model.
 **Grid Search**
 
-After finding our best performing model (Random Forest). We used GridSearch to perform hyperparameterisation of our model to try and create an even more accurate model.
+After finding our best performing model (Random Forest). We used GridSearch to perform hyperparameterisation of our model to try and create an even more accurate model. We decided to perform GridSearch on our Untouched Random Forest, as it has one of the highest accuracy and the highest True Positive Rate amongst the models that we had tested. A high True Positive Rate is important as we want our model to be especially accurate in detecting cases where heart disease is present. 
 
 ## Results
 ----
+This table denotes various performance statistics for the respective models on the test set.
 
 Model | Accuracy | TPR | TNR
 --- | --- | --- | --- 
@@ -52,5 +54,24 @@ Random Forest with Male and Female Split (Averaged) | 0.824 | 0.691 | 0.811
 Support Vector Model (SVM) | 0.842 | 0.811 | 0.821
 Untouched Random Forest after grid search | 0.842 | 0.887 | 0.770
 
+After Grid Search, the Untouched Random Forest although keeping the same accuracy score, now has a higher True Postive Rate.
 
+## Conclusion
+----
+In conclusion, we found that it is possible to classify heart disease with heart disease predictors with relatively high accuracy (>80%), despite the gender being imbalanced. More importantly, the True Positive Rate for the models are relatively high, which signifies that our models can predict a positive case (where heart disease is present) very consistently, which could be used in the real world to help doctors to determine which patients are most likely to have heart disease.
 
+Based on the successes of the Machine Learning models, we can determine that there exists a strong correlation between a heart disease and certain predictors like age and beats per minute.
+
+## Contributors
+---
+@yukunf - Data Cleaning, EDA, Grid Search, Video
+
+@ElijahLimJC - Decision Tree, Random Forest, SVM, Grid Search, Video
+
+@GuanyuGit - Random Forest, Video, Slides Preperation
+
+## References
+---
+- https://scikit-learn.org/stable/modules/grid_search.html
+- https://scikit-learn.org/stable/modules/svm.html
+- https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
