@@ -37,6 +37,7 @@ Third, we split the female data from the male data and tried to model them seper
 **Support Vector Machine (SVM) model**
 
 We used a SVM as a regression model to help predict heart disease with the same predictors as our baseline model.
+
 **Grid Search**
 
 After finding our best performing model (Random Forest). We used GridSearch to perform hyperparameterisation of our model to try and create an even more accurate model. We decided to perform GridSearch on our Untouched Random Forest, as it has one of the highest accuracy and the highest True Positive Rate amongst the models that we had tested. A high True Positive Rate is important as we want our model to be especially accurate in detecting cases where heart disease is present. 
