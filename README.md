@@ -51,7 +51,7 @@ Third, we split the female data from the male data and tried to model them seper
 
 **Support Vector Machine (SVM) model**
 
-We used a SVM as a regression model to help predict heart disease with the same predictors as our baseline model. The SVM we used was deploying a linear kernel.
+We used a SVM as a regression model to help predict heart disease with the same predictors as our baseline model. The SVM we used deployed a linear kernel.
 
 **Grid Search**
 
