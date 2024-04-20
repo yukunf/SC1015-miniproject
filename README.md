@@ -24,6 +24,13 @@ The dataset used can be found [here](https://www.kaggle.com/datasets/fedesoriano
 ---
 **Data Cleaning**
 
+Our dataset consisted of 10 possible predictors, which came in the form of categorical and numeric data. The dataset was cleaned and modified using a variety of Machine Learning techniques.
+
+- Duplicates were filtered and removed using Panda DataFrame techniques
+- Categorical data was converted to numeric data using one-hot encoding
+- Train/test were split
+
+
 **Baseline Model - Binary Classification Tree**
 
 The binary classification model is used to demonstrate that this task of heart disease detection requires a more complex model, as the binary classification tree yieleded results that were not up to our expections.
