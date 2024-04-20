@@ -27,8 +27,16 @@ The dataset used can be found [here](https://www.kaggle.com/datasets/fedesoriano
 Our dataset consisted of 10 possible predictors, which came in the form of categorical and numeric data. The dataset was cleaned and modified using a variety of Machine Learning techniques.
 
 - Duplicates were filtered and removed using Panda DataFrame techniques
-- Categorical data was converted to numeric data using one-hot encoding
+- Categorical data was converted to numeric data using one-hot encoding and ordinal encoding
 - Train/test were split
+
+**Exploratory Data Analysis**
+
+Below shows our initial findings from our EDA, as well as actions taken after EDA.
+
+- Our data was skewed towards the male gender
+- Variables like RestingBP could be ignored due to low correlation
+- Dropped outliers using IQR
 
 
 **Baseline Model - Binary Classification Tree**
@@ -43,7 +51,7 @@ Third, we split the female data from the male data and tried to model them seper
 
 **Support Vector Machine (SVM) model**
 
-We used a SVM as a regression model to help predict heart disease with the same predictors as our baseline model.
+We used a SVM as a regression model to help predict heart disease with the same predictors as our baseline model. The SVM we used was deploying a linear kernel.
 
 **Grid Search**
 
@@ -83,3 +91,7 @@ Based on the successes of the Machine Learning models, we can determine that the
 - https://scikit-learn.org/stable/modules/grid_search.html
 - https://scikit-learn.org/stable/modules/svm.html
 - https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
+- https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html
+- https://towardsdatascience.com/building-a-random-forest-by-hand-in-python-187ac0620875
+- https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OrdinalEncoder.html
+- https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC
