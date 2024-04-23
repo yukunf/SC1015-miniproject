@@ -6,7 +6,7 @@
 This repository contains the project files for SC1015 mini-project.
 With the rates of heart disease increasing at a rapid rate all across the globe, we aim to use different classification models to determine the likelihood of heart disease with attributes associated with heart disease.
 
-Listed are the ipynb files used, which should be viewed in order.
+Listed are the steps taken in order.
 
 1. EDA and Data cleaning
 2. Baseline model- Binary Classification
